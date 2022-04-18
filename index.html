@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"> <!--overall container tag-->
+    <head> <!--Data about the document/ settings of the document-->
+        <meta charset="UTF-8"> <!--defines information of the document--> <!--charset defines information about our file-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This information is scraped by search engines to display a description of your webpage-->
+        <title>HTML full course</title> <!--used to hold text content-->
+    </head>
+    <body> <!--meat and bones of the webpage/ the bulk of the webpage-->
+        <p>HTML tag examples</p>
+        <header>
+            <nav>
+
+            </nav>
+        </header>
+        <main>
+            <article> <!--article tag would be used for something likea blog post-->
+                <section> <!--a section tag works in line as a "div" tag as far as I know currently-->
+                    <aside> <!--The aside tag is used to display something on the website that isn't related to the main section of your page. Mostly used for adds on websites-->
+
+                    </aside>
+                    <a href="https://www.google.com" target="_blank">Googles home page, an example of the "a" tag with a link.</a> <!--the target="_blank" will open the link on a new tab.-->
+                    <img width="100" height="100" src="dice6.png" alt="A six dice"> <!--you can use a image from a folder or copy and paste from the internet. The "alt" is used to describe the picture if it cannot load.-->
+                    <video src="#" controls poster="" alt="placeholder for video" width="" height=""></video>
+                    <ul>
+                        <li><a href="#">Apples</a></li>
+                        <li>Bannaners</li>
+                        <li>Kiwi</li>
+                    </ul>
+                    <ol type="I"> <!--you can change the type of value for the list, A, a, I, i, 1, etc.-->
+                        <li><a href="#">Apples</a></li>
+                            <ol type="I">
+                                <li>You can embed a list within a list</li>
+                            </ol>
+                        <li><a href="#">Bannaners</a></li>
+                            <ol>
+                                <li>Bannaners are yellow and good for you</li>
+                            </ol>
+                        <li><a href="#">Kiwi</a></li>
+                            <ol>
+                                <li>Kiwi is fuzzy and good for you</li>
+                            </ol>
+                    </ol><!--"ol" and "li" are the most commenly used list tags.-->
+                    <dl>
+                        <dt>Apples</dt>
+                        <dd>- They are red</dd>
+                        <dt>Bannaners</dt>
+                        <dd>- They are yellow</dd>
+                        <dt>Kiwi</dt>
+                        <dd>They are fuzzy and green on the inside</dd><!--"dl" lists are used to describe your list items-->
+                    </dl><hr>
+                    <table><!--"tr" is table row "td" is table data-->
+                        <thead><!--"thead"  table header tag does not change the apperance of your table but simply makes it easier to read your code-->
+                            <caption><h3>Example of a table within HTML</h3></caption><!--caption tag is used to set a title for the table tag, commenly used with a header tag-->
+                            <tr>
+                                <th>num1</th> <!--"th" tag is table header using the "th" tag will bold the text-->
+                                <th>num2</th>
+                                <th>num3</th>
+                            </tr>
+                        </thead>
+                        <tbody><!--similar to "thead" but "tbody", table body is used for the contents of the table-->
+                            <tr>
+                                <td>one</td>
+                                <td>two</td>
+                                <td>three</td>
+                            </tr>
+                            <tr>
+                                <td>four</td>
+                                <td>five</td>
+                                <td>six</td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </section>
+            </article>
+        </main>
+        <footer>
+
+        </footer>
+        <h1>Richards refrence website for HTML</h1> <!--there are a total of 6 headers h1-h6 used to announce text on your webpage-->
+        <br/> <!--this is a line break tag used to make space in a document you can use multiple br tags on the same line-->
+        <div><!--the "div" tag is a BLOCK element this means that whatever is in the div will take up the entire width of the page, you cannot have multiple block elemets next to each other on a horizontal line. A INLINE element will sit next to one another on the horizontal line the "span" tag is an ecample of a INLINE element-->
+            <p>paragraph tages will automatically space themselfs out to look like paragrapsh</p>
+            <p>You can make text <b>Bold</b> by using the "b" tag along with making text <i>Italic</i> by using the "i" tag</p> <!--you can bold and italicise the same text-->
+            <p>Tags that start within a tag should always be indented within said tag.</p>
+            <hr/> <!--similar to the br tag but this adds a horizontal line across the webpage-->
+            <p>The p tag is the grandchild of the html tag and child of the body tag</p> <!--parent, child, grandchild, etc-->
+            <p>html doesn't care about whitespace</p>
+            <p>You can use the <big>big tag</big> along with the <small>small tag to</small> make text slightly bigger or slightly smaller</p>
+            <p>By using the "sub" tag you can turn H2O into H<sub>2</sub>O</p>
+            <p>By using the "sup" tag you can turn 102 into 10<sup>2</sup></p> <!--super script tag-->
+            <p>The above are examples of basic html tags "br", "b", "i", "big", "small", "sub", and "sup".</p>
+        </div>
+        <hr/>
+        <div>
+            <form><!--the form tag is like a wrapper for user input-->
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">MDN Page with Input "types"</a><br>
+                <input type="text" placeholder="Enter Your Username"><br>
+                <input type="password" placeholder="Enter Your Password"><br>
+                <input type="date"><br>
+                <textarea rows="5" cols="30">
+                
+                </textarea><br>
+                <input type="checkbox">This is a checkbox<br>
+                <input type="checkbox">This is a checkbox<br>
+                <input name="btn" type="radio">This is a radio button<br><!--radio buttons that have the same name you can only select one option under the same name-->
+                <input name="btn" type="radio">This is a radio button<br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
